@@ -1,0 +1,24 @@
+.fastGallery {
+  .invisible {
+    visibility: hidden;
+  }
+
+  .item {
+    height: 100vw;
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    will-change: transform;
+    object-fit: contain;
+  }
+
+  img {
+    opacity: 0;
+    transition: opacity .3s;
+    &.loaded {
+     opacity: 1;
+    }
+  }
+}
